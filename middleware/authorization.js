@@ -16,6 +16,6 @@ module.exports = async (req, res, next) => {
     next();
   }
   if (role !== "Admin") {
-    res.status(500).send({ msg: "You are not Autjorized!" });
+    res.status(500).send({ msg: "You are not Autorized!" });
   }
 };
