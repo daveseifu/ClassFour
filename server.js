@@ -27,8 +27,9 @@ app.use(express.json({ extended: false }));
 // });
 
 app.use("/product", require("./ProductRouter"));
+
 console.log("i'm in server room middleware");
-const port = 5000;
+const port = 3000;
 app.listen(port, () => {
   console.log("Express server is running");
 });
